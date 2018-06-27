@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <string name="True">True</string>
+    <string name="False">False</string>
+    <string name="Unlock">Unlock</string>
+    <string name="Next">Next</string>
+    <string name="initial_Score_Text">Score:</string>
+</resources>
