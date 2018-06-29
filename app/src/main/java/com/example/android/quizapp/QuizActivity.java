@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
+import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -30,6 +31,9 @@ public class QuizActivity extends AppCompatActivity {
         TextView numberingTextView;
         TextView explanationTextView;
         LinearLayout mLayout;
+        RadioButton radioButton1;
+        RadioButton radioButton2;
+        RadioButton radioButton3;
         ProgressBar mProgressBar;
     TextView extralayer;
         //Creating a new model and calling it as an array
@@ -48,6 +52,7 @@ public class QuizActivity extends AppCompatActivity {
             new QuestionModel(R.string.question_11,R.string.question_011, true),
             new QuestionModel(R.string.question_12,R.string.question_012, false),
             new QuestionModel(R.string.question_13,R.string.question_013, true),
+            new QuestionModel(R.string.question_14,R.string.question_014, true),
 
     };
 
@@ -73,6 +78,9 @@ public class QuizActivity extends AppCompatActivity {
         mLayout = (LinearLayout) findViewById(R.id.TrueFalseLayout);
         mProgressBar = (ProgressBar) findViewById(R.id.progressbar);
         extralayer= (TextView) findViewById(R.id.extraLayer);
+        radioButton1 = (RadioButton) findViewById(R.id.radioButton1);
+        radioButton2 = (RadioButton) findViewById(R.id.radioButton2);
+        radioButton3 = (RadioButton) findViewById(R.id.radioButton3);
 
 
 //        initialising my controls
@@ -115,11 +123,21 @@ public class QuizActivity extends AppCompatActivity {
                 }
 
                 numbering =  (numbering + 1);
+
                 updateQuestion();
                 mLayout.setVisibility(View.VISIBLE);
                 explanationTextView.setVisibility(View.INVISIBLE);
                 displayTextView.setVisibility(View.VISIBLE);
                extralayer.setVisibility(View.INVISIBLE);
+
+
+                if (numbering==questions.length){
+                    mLayout.setVisibility(View.INVISIBLE);
+                    radioButton1.setVisibility(View.VISIBLE);
+                    radioButton2.setVisibility(View.VISIBLE);
+                    radioButton3.setVisibility(View.VISIBLE);
+
+                }
 
             }
         });
@@ -151,7 +169,13 @@ public class QuizActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {int checkAnswerr = questions[currentIndex].getExplanation();
                displayTextView.setVisibility(View.INVISIBLE);
+
+                //making the True & false buttons invisible onclick
                 mLayout.setVisibility(View.INVISIBLE);
+                //making the radioButtons invisible onclick
+                radioButton1.setVisibility(View.INVISIBLE);
+                radioButton2.setVisibility(View.INVISIBLE);
+                radioButton3.setVisibility(View.INVISIBLE);
 
                 explanationTextView.setVisibility(View.VISIBLE);
                 explanationTextView.setText(checkAnswerr);
@@ -160,7 +184,43 @@ public class QuizActivity extends AppCompatActivity {
         });
 
 
+        radioButton1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+                TrueFalse (false);
+                radioButton1.setVisibility(View.INVISIBLE);
+                radioButton2.setVisibility(View.INVISIBLE);
+                radioButton3.setVisibility(View.INVISIBLE);
+
+            }
+        });
+
+        radioButton2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                TrueFalse (true);
+
+                radioButton1.setVisibility(View.INVISIBLE);
+                radioButton2.setVisibility(View.INVISIBLE);
+                radioButton3.setVisibility(View.INVISIBLE);
+
+
+            }
+        });
+
+        radioButton3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                TrueFalse (false);
+                radioButton1.setVisibility(View.INVISIBLE);
+                radioButton2.setVisibility(View.INVISIBLE);
+                radioButton3.setVisibility(View.INVISIBLE);
+
+            }
+        });
 
 
 

@@ -42,6 +42,8 @@
     <string name="question_11">getText().toString()method can be used to convert user input to a string.</string>
     <string name="question_12">The orientation attribute can be set on both LinearLayout and RelativeLayout.</string>
     <string name="question_13">Backward-stroke followed by the \"n\" character begins a string on a new line.</string>
+    <string name="question_14">Which of the following Git commands makes a copy of an entire repository unto your computer</string>
+
 
 
 
@@ -61,7 +63,12 @@
     <string name="question_011">Correct !! Its an important method used in converting your name input in this app</string>
     <string name="question_012">No, it works on LinearLayout.</string>
     <string name="question_013">Yes,\n It does, just used it to display this answer.</string>
+    <string name="question_014">it is \n  git clone [url link] </string>
+
     <string name="lets_practise">lets practise</string>
+    <string name="git_init">git init</string>
+    <string name="git_clone">git clone</string>
+    <string name="git_add">git add</string>
 
 
 </resources>
