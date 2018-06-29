@@ -61,6 +61,7 @@
     <string name="question_011">Correct !! Its an important method used in converting your name input in this app</string>
     <string name="question_012">No, it works on LinearLayout.</string>
     <string name="question_013">Yes,\n It does, just used it to display this answer.</string>
+    <string name="lets_practise">lets practise</string>
 
 
 </resources>
