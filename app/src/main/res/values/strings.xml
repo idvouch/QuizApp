@@ -5,4 +5,62 @@
     <string name="Unlock">Unlock</string>
     <string name="Next">Next</string>
     <string name="initial_Score_Text">Score:</string>
+    <string name="correct_toast">Correct</string>
+    <string name="incorrect_toast">Wrong</string>
+    <string name="user_Name">User Name</string>
+    <string name="android_basics">android basics</string>
+    <string name="user_name">User Name</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--QUESTIONS-->
+
+
+    <string name="question_1">It is standard practice to express width and height in Scale Independent Pixels.</string>
+    <string name="question_2">UX is an acronym for everything the user sees on screen and interacts with.</string>
+    <string name="question_3">Attributes determine the behaviour and appearance of a view on a layout.</string>
+    <string name="question_4">The entire lifeline of an activity happens between the call to onCreate-onDestroy.</string>
+    <string name="question_5">Placing String value of xml attribute in the layout file is best practice.</string>
+    <string name="question_6">Pictures are to drawable folder as colours are to values folder.</string>
+    <string name="question_7">A local variable is one accessible by all the methods in a given object.</string>
+    <string name="question_8">android:textSize can be declared to change a text size on your layout</string>
+    <string name="question_9">Google was originally called \"Backrub\".</string>
+    <string name="question_10">Implicit intents can send your app users to another app to perform an activity.</string>
+    <string name="question_11">getText().toString()method can be used to convert user input to a string.</string>
+    <string name="question_12">The orientation attribute can be set on both LinearLayout and RelativeLayout.</string>
+    <string name="question_13">Backward-stroke followed by the \"n\" character begins a string on a new line.</string>
+
+
+
+    <!--Explanation-->
+
+
+    <string name="question_01">It is standard practice to express both in Density Independent Pixels \"DP\".</string>
+    <string name="question_02">\"UI\" is. UX however refers to user experience.</string>
+    <string name="question_03">Yes, Attributes determine the behaviour and appearance of a view.</string>
+    <string name="question_04">Yes, The entire lifeline of an activity happens between the call to onCreate-onDestroy.</string>
+    <string name="question_05">Its best practise to place in strings.xml file .</string>
+    <string name="question_06">Colours are stored in the values folder; Pictures in the Drawable folder </string>
+    <string name="question_07">It can only be accessed in the method where it was declared</string>
+    <string name="question_08">android:textSize, absolutely !!.</string>
+    <string name="question_09">Google was originally called \"Backrub\" by Larry Page and Sergey Brin.</string>
+    <string name="question_010">Implicit intents take users off your app Explicit takes users to another activity in your app</string>
+    <string name="question_011">Correct !! Its an important method used in converting your name input in this app</string>
+    <string name="question_012">No, it works on LinearLayout.</string>
+    <string name="question_013">Yes,\n It does, just used it to display this answer.</string>
+
+
 </resources>
