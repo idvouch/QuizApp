@@ -42,7 +42,7 @@
     <string name="question_11">getText().toString()method can be used to convert user input to a string.</string>
     <string name="question_12">The orientation attribute can be set on both LinearLayout and RelativeLayout.</string>
     <string name="question_13">Backward-stroke followed by the \"n\" character begins a string on a new line.</string>
-    <string name="question_14">Which of the following Git commands makes a copy of an entire repository unto your computer</string>
+    <string name="question_14">Which Git command makes a copy of an entire repository unto your computer</string>
 
 
 

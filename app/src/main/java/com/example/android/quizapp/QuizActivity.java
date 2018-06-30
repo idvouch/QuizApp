@@ -35,7 +35,10 @@ public class QuizActivity extends AppCompatActivity {
         RadioButton radioButton2;
         RadioButton radioButton3;
         ProgressBar mProgressBar;
-    TextView extralayer;
+        TextView extralayer;
+        private static final String NUMBERING2 = "NUMBERING";
+        private static final String SCORE2 = "SCORE";
+        private static final String CURRENTINDEX2 = "CURRENTINDEX";
         //Creating a new model and calling it as an array
 
     QuestionModel[] questions = new QuestionModel[]{
@@ -226,7 +229,27 @@ public class QuizActivity extends AppCompatActivity {
 
     }
 
-//    method to update questions,score and progress
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt("NUMBERING2", numbering);
+        outState.putInt("SCORE2", score);
+        outState.putInt("CURRENTINDEX2", currentIndex);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        numbering = savedInstanceState.getInt(NUMBERING2);
+        score = savedInstanceState.getInt(SCORE2);
+        currentIndex = savedInstanceState.getInt(CURRENTINDEX2);
+        updateQuestion();
+
+
+    }
+
+    //    method to update questions,score and progress
     public void  updateQuestion(){
 
 
@@ -240,7 +263,6 @@ public class QuizActivity extends AppCompatActivity {
     public void TrueFalse (boolean myAnswer){
 
         int toastMessage;
-
         boolean answer = questions[currentIndex].isAnswer();
 
         if (myAnswer == answer){
