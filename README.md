@@ -16,7 +16,7 @@ SELLING POINTS
 
 
 Downloadable link:
-https://drive.google.com/open?id=1_kDORAYBclvPwCpnvKcKNQeWT0SwLDeF
+https://drive.google.com/open?id=1V-q1D0cXXUgRXRTvVvUbwolxWRuenL3W
 
 
 Should you have issues downloading this apk, pls buzz me on 08134435535
