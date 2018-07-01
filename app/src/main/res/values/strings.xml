@@ -29,20 +29,20 @@
     <!--QUESTIONS-->
 
 
-    <string name="question_1">It is standard practice to express width and height in Scale Independent Pixels.</string>
-    <string name="question_2">UX is an acronym for everything the user sees on screen and interacts with.</string>
-    <string name="question_3">Attributes determine the behaviour and appearance of a view on a layout.</string>
-    <string name="question_4">The entire lifeline of an activity happens between the call to onCreate-onDestroy.</string>
-    <string name="question_5">Placing String value of xml attribute in the layout file is best practice.</string>
+    <string name="question_1">Width and height is expressed in Scale Independent Pixels.</string>
+    <string name="question_2">UX refers to everything the user sees on screen and interacts with.</string>
+    <string name="question_3">Attributes determine behaviour and appearance of a view on a layout.</string>
+    <string name="question_4">The lifeline of an activity happens between: onCreate-onDestroy.</string>
+    <string name="question_5">Placing String value of xml attribute in the layout-xml is best practice.</string>
     <string name="question_6">Pictures are to drawable folder as colours are to values folder.</string>
     <string name="question_7">A local variable is one accessible by all the methods in a given object.</string>
     <string name="question_8">android:textSize can be declared to change a text size on your layout</string>
     <string name="question_9">Google was originally called \"Backrub\".</string>
-    <string name="question_10">Implicit intents can send your app users to another app to perform an activity.</string>
+    <string name="question_10">Implicit intents sends your app-users to another app to perform an activity.</string>
     <string name="question_11">getText().toString()method can be used to convert user input to a string.</string>
-    <string name="question_12">The orientation attribute can be set on both LinearLayout and RelativeLayout.</string>
-    <string name="question_13">Backward-stroke followed by the \"n\" character begins a string on a new line.</string>
-    <string name="question_14">Which Git command makes a copy of an entire repository unto your computer</string>
+    <string name="question_12">The orientation attribute can be set on LinearLayout and RelativeLayout.</string>
+    <string name="question_13">Backward-stroke followed by \"n\" character begins a new line.</string>
+    <string name="question_14">What Git command makes a copy of an entire online repository</string>
 
 
 

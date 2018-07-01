@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".QuizActivity"
-                  android:configChanges="orientation|screenSize">
+                  >
 
         </activity>
     </application>

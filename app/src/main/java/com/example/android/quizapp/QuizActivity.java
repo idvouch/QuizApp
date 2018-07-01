@@ -36,10 +36,14 @@ public class QuizActivity extends AppCompatActivity {
         RadioButton radioButton3;
         ProgressBar mProgressBar;
         TextView extralayer;
-        private static final String NUMBERING2 = "NUMBERING";
-        private static final String SCORE2 = "SCORE";
-        private static final String CURRENTINDEX2 = "CURRENTINDEX";
-        //Creating a new model and calling it as an array
+    public static final String CURRENTINDEX = "CURRENTINDEX";
+    public static final String KEY = "SCORE";
+    public static final String NUMBERING = "NUMBERING";
+
+    int questionToDisplay;
+
+
+    //Creating a new model and calling it as an array
 
     QuestionModel[] questions = new QuestionModel[]{
             new QuestionModel(R.string.question_1,R.string.question_01, false),
@@ -87,7 +91,7 @@ public class QuizActivity extends AppCompatActivity {
 
 
 //        initialising my controls
-        int questionToDisplay = questions[currentIndex].getQuestion();
+         questionToDisplay = questions[currentIndex].getQuestion();
         displayTextView.setText(questionToDisplay);
         numberingTextView.setText("" + numbering);
         ra = magic();
@@ -230,24 +234,31 @@ public class QuizActivity extends AppCompatActivity {
     }
 
 
+
+
+
+
+
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        outState.putInt("NUMBERING2", numbering);
-        outState.putInt("SCORE2", score);
-        outState.putInt("CURRENTINDEX2", currentIndex);
+
+        outState.putInt(NUMBERING, numbering);
+        outState.putInt(KEY, score);
+        outState.putInt(CURRENTINDEX, currentIndex);
+
     }
 
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
-        numbering = savedInstanceState.getInt(NUMBERING2);
-        score = savedInstanceState.getInt(SCORE2);
-        currentIndex = savedInstanceState.getInt(CURRENTINDEX2);
-        updateQuestion();
+
+        numbering = savedInstanceState.getInt(NUMBERING);
+        score = savedInstanceState.getInt(KEY);
+        currentIndex =savedInstanceState.getInt(CURRENTINDEX);
+        updateQuestion();}
 
 
-    }
 
     //    method to update questions,score and progress
     public void  updateQuestion(){
